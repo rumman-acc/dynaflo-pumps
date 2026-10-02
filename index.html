@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynaflo, Inc. | Custom Energy-Efficient Mini Diaphragm Vacuum Pumps & Air Compressors</title>
+    <meta name="description" content="Manufacturer of custom energy-efficient mini diaphragm vacuum pumps and air compressors for medical, industrial, and precision applications. Made in the USA since 1998.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+        
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0066cc;
+        }
+        
+        .header-contact {
+            font-size: 0.95rem;
+            color: #555;
+        }
+        
+        .header-contact a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .header-contact a:hover {
+            text-decoration: underline;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #0066cc 0%, #004999 100%);
+            color: #ffffff;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ffffff;
+            color: #0066cc;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #0066cc;
+            text-align: center;
+        }
+        
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        
+        .about-content p {
+            margin-bottom: 1.25rem;
+        }
+        
+        .highlight {
+            background: #e6f2ff;
+            padding: 1.5rem;
+            border-left: 4px solid #0066cc;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .product-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+        
+        .product-card h3 {
+            font-size: 1.5rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+        
+        .product-card p {
+            color: #555;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        .product-specs {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 1rem;
+        }
+        
+        .product-specs strong {
+            color: #333;
+        }
+        
+        .differentiators-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .diff-item {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .diff-item h3 {
+            font-size: 1.25rem;
+            color: #0066cc;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .diff-item h3::before {
+            content: "✓";
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background: #0066cc;
+            color: #ffffff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            margin-right: 0.75rem;
+            font-weight: 700;
+        }
+        
+        .diff-item p {
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .contact-content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact-details {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            margin: 1.5rem 0;
+            font-size: 1.05rem;
+        }
+        
+        .contact-item strong {
+            display: block;
+            color: #0066cc;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .contact-item a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: #ffffff;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+            opacity: 0.9;
+        }
+        
+        footer a {
+            color: #66b3ff;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .products-grid,
+            .differentiators-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Dynaflo, Inc.</div>
+            <div class="header-contact">
+                <a href="tel:+16102008017">(610) 200-8017</a> | 
+                <a href="mailto:sales@dynaflopumps.com">sales@dynaflopumps.com</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Custom Energy-Efficient Mini Diaphragm Vacuum Pumps & Air Compressors</h1>
+            <p>Manufacturer of precision pumps for medical, industrial, and specialized applications. Designed and built in the USA since 1998.</p>
+            <a href="#contact" class="cta-button">Request a Complimentary Trial</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Dynaflo</h2>
+        <div class="about-content">
+            <p>Dynaflo, Inc. was founded in 1998 in Reading, Pennsylvania to address a critical need in the medical equipment industry for smaller, quieter, and more efficient vacuum pumps and compressors. With 18 employees led by President & CEO Kevin Shaw, the company designs and manufactures all products on-site in Pennsylvania using high-quality, precision materials with a focus on safe, reliable performance.</p>
+            
+            <div class="highlight">
+                <strong>Award-Winning Innovation:</strong> In 2008, Dynaflo's custom engineered 3000 Series radial diaphragm air compressor was named a finalist in Design News' "Build a Better Mousetrap" competition.
+            </div>
+            
+            <p>Every Dynaflo pump is designed, engineered, manufactured, inspected, assembled, and tested on-site in Pennsylvania, ensuring the highest standards of quality and performance. The company serves OEM manufacturers and engineers developing medical devices, air and gas monitoring equipment, industrial automation systems, semiconductor and biotech applications, and food and packaging systems.</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Products & Services</h2>
+        <p class="section-intro">Dynaflo manufactures several series of custom diaphragm pumps, each engineered for specific performance requirements. All pumps can be fully customized including motor type, performance specifications, materials, wiring, connectors, and mounting.</p>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <h3>1000 Series</h3>
+                <p>Small, powerful gas diaphragm vacuum pumps using half the power of leading pumps. Delivers 2.9 L/min/W efficiency and is 60% more efficient than competing pumps.</p>
+                <div class="product-specs">
+                    <strong>Specifications:</strong><br>
+                    Max Flow: 75 L/min<br>
+                    Max Pressure: 40 psig<br>
+                    Max Vacuum: 28 inHg<br>
+                    Weight: Up to 2.9 lbs
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <h3>2000 Series</h3>
+                <p>Micro diaphragm pumps designed for high vacuum and portability. Can be refurbished while reusing the motor, providing long-term value and sustainability.</p>
+                <div class="product-specs">
+                    <strong>Specifications:</strong><br>
+                    Max Flow: 1.15 L/min<br>
+                    Max Pressure: 30 psig<br>
+                    Max Vacuum: 24 inHg
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <h3>3000 Series</h3>
+                <p>Smooth flow radial diaphragm air compressors providing the only real smooth output flow on the market for ventilator applications. Award-winning design recognized by Design News.</p>
+                <div class="product-specs">
+                    <strong>Features:</strong><br>
+                    Radial diaphragm design<br>
+                    Smooth, consistent flow<br>
+                    Ideal for medical ventilators
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <h3>6000 Series</h3>
+                <p>Mini diaphragm pumps engineered for precise control in demanding applications requiring compact size and accurate performance.</p>
+                <div class="product-specs">
+                    <strong>Features:</strong><br>
+                    Precise control<br>
+                    Compact design<br>
+                    Custom configurations available
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <h3>Custom Engineering</h3>
+                <p>Complete custom design services from concept to production. Dynaflo provides confidential guidance throughout all phases of pump development, ensuring seamless integration with your application.</p>
+            </div>
+            
+            <div class="product-card">
+                <h3>Complimentary Trial Periods</h3>
+                <p>Test Dynaflo pumps in your application with complimentary trial periods. Ensure perfect performance and integration before committing to production volumes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="differentiators">
+        <h2>Why Choose Dynaflo</h2>
+        <p class="section-intro">Dynaflo pumps deliver superior performance, efficiency, and reliability backed by American manufacturing excellence.</p>
+        
+        <div class="differentiators-grid">
+            <div class="diff-item">
+                <h3>50% Less Power Consumption</h3>
+                <p>Dynaflo pumps use approximately 50% less power than leading competitor pumps while delivering comparable or superior performance. The 1000 Series achieves 60% greater efficiency than competing models.</p>
+            </div>
+            
+            <div class="diff-item">
+                <h3>Made in the USA</h3>
+                <p>All products are designed and manufactured in the United States with quality "Made in the USA" parts. Every step from design to testing is performed on-site in Reading, Pennsylvania.</p>
+            </div>
+            
+            <div class="diff-item">
+                <h3>Oil-Free Operation</h3>
+                <p>All Dynaflo pumps feature oil-free operation requiring minimal maintenance, reducing downtime and operating costs while ensuring clean, contamination-free performance.</p>
+            </div>
+            
+            <div class="diff-item">
+                <h3>Compact & Lightweight</h3>
+                <p>Engineered for space-constrained applications. The largest 1000 Series pump weighs just 2.9 lbs, making integration into portable and compact devices seamless.</p>
+            </div>
+            
+            <div class="diff-item">
+                <h3>Restart Under Load</h3>
+                <p>Dynaflo pumps can restart under load, providing reliable operation in demanding applications where power interruptions may occur.</p>
+            </div>
+            
+            <div class="diff-item">
+                <h3>Long Motor Life</h3>
+                <p>All motors feature a minimum 1,000-hour life rating, ensuring dependable long-term performance and reduced replacement costs.</p>
+            </div>
+            
+            <div class="diff-item">
+                <h3>Smooth Flow Technology</h3>
+                <p>The 3000 Series provides the only real smooth output flow on the market, critical for ventilator applications requiring consistent, pulsation-free air delivery.</p>
+            </div>
+            
+            <div class="diff-item">
+                <h3>Refurbishment Options</h3>
+                <p>The 2000 Series micro pump can be refurbished while reusing the motor, providing sustainable, cost-effective maintenance and extending product lifecycle.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <p class="section-intro">Ready to experience the Dynaflo difference? Contact us for a complimentary pump trial or to discuss your custom pump requirements.</p>
+            
+            <div class="contact-details">
+                <div class="contact-item">
+                    <strong>Address</strong>
+                    10 Vanguard Dr, Suite 20<br>
+                    Reading, PA 19606
+                </div>
+                
+                <div class="contact-item">
+                    <strong>Phone</strong>
+                    <a href="tel:+16102008017">(610) 200-8017</a>
+                </div>
+                
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <a href="mailto:sales@dynaflopumps.com">sales@dynaflopumps.com</a>
+                </div>
+                
+                <div class="contact-item">
+                    <strong>Hours</strong>
+                    Monday - Friday, 9:00 AM - 5:00 PM
+                </div>
+                
+                <div class="contact-item">
+                    <strong>Website</strong>
+                    <a href="https://dynaflopumps.com" target="_blank" rel="noopener">dynaflopumps.com</a>
+                </div>
+                
+                <div class="contact-item">
+                    <strong>LinkedIn</strong>
+                    <a href="https://linkedin.com/company/dynaflo-inc" target="_blank" rel="noopener">linkedin.com/company/dynaflo-inc</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dynaflo, Inc. All rights reserved.</p>
+        <p>10 Vanguard Dr, Suite 20, Reading, PA 19606 | <a href="tel:+16102008017">(610) 200-8017</a></p>
+        <p><a href="https://dynaflopumps.com" target="_blank" rel="noopener">dynaflopumps.com</a></p>
+    </footer>
+</body>
+</html>
